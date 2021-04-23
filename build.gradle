@@ -1,0 +1,10 @@
+plugins {
+  id 'war'
+  id 'ear'
+}
+
+defaultTasks 'clean', 'build'
+
+dependencies {
+  deploy files(war)
+}
